@@ -1,0 +1,44 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain_suffix": [
+        "hdchina.org",
+        "chdbits.co",
+        "hdsky.me",
+        "pterclub.com",
+        "ptsbao.club",
+        "hdfans.org",
+        "springsunday.net",
+        "keepfrds.com",
+        "ourbits.club",
+        "totheglory.im",
+        "btschool.club",
+        "tjupt.org",
+        "pthome.net",
+        "dicmusic.com",
+        "nicept.net",
+        "sjtu.edu.cn",
+        "soulvoice.club",
+        "open.cd",
+        "nanyangpt.com",
+        "et8.org",
+        "gazellegames.net",
+        "m-team.cc",
+        "m-team.io",
+        "synology.com",
+        "chencc.fun",
+        "mycoin.xin",
+        "tsinghua.edu.cn",
+        "pk.edu.cn",
+        "fudan.edu.cn",
+        "synocommunity.com",
+        "synology.me",
+        "synology.io",
+        "immortalwrt.net",
+        "e7mbqhx.com",
+        "fcnode.net"
+      ]
+    }
+  ]
+}
