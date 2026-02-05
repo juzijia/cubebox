@@ -1,4 +1,88 @@
-# ===== PT Tracker / 常用 =====
+
+# ==========================================
+# 1. 精确域名 (DOMAIN) - IP查询/下载工具
+# ==========================================
+DOMAIN,api.ipify.org
+DOMAIN,ifconfig.me
+DOMAIN,ifconfig.co
+DOMAIN,ident.me
+DOMAIN,resolver1.opendns.com
+DOMAIN,detectportal.firefox.com
+DOMAIN,router.bittorrent.com
+DOMAIN,dht.transmissionbt.com
+DOMAIN,tracker.opentrackr.org
+DOMAIN,tracker.openbittorrent.com
+DOMAIN,dht.utorrent.com
+DOMAIN,tracker.internetwarriors.net
+DOMAIN,app.yinxiang.com
+
+# ==========================================
+# 2. 后缀匹配 (DOMAIN-SUFFIX)
+# ==========================================
+# --- 局域网与私有域名 (不在 CN 列表) ---
+DOMAIN-SUFFIX,lan
+DOMAIN-SUFFIX,local
+DOMAIN-SUFFIX,localdomain
+DOMAIN-SUFFIX,localhost
+DOMAIN-SUFFIX,test
+DOMAIN-SUFFIX,home.arpa
+DOMAIN-SUFFIX,direct
+DOMAIN-SUFFIX,example
+DOMAIN-SUFFIX,invalid
+
+  # --- Apple & Microsoft (国外公司，必须直连) ---
+DOMAIN-SUFFIX,apple.com
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,mzstatic.com
+DOMAIN-SUFFIX,apple-dns.net
+DOMAIN-SUFFIX,microsoft.com
+DOMAIN-SUFFIX,microsoftonline.com
+DOMAIN-SUFFIX,live.com
+DOMAIN-SUFFIX,msftauth.net
+DOMAIN-SUFFIX,windows.net
+DOMAIN-SUFFIX,windowsupdate.com
+DOMAIN-SUFFIX,delivery.mp.microsoft.com
+DOMAIN-SUFFIX,sls.microsoft.com
+DOMAIN-SUFFIX,xboxlive.com
+DOMAIN-SUFFIX,office.com
+DOMAIN-SUFFIX,office365.com
+
+  # --- 硬件与CDN (Cloudflare/Nvidia/ASUS) ---
+DOMAIN-SUFFIX,cloudflare.com
+DOMAIN-SUFFIX,cloudflare-dns.com
+DOMAIN-SUFFIX,nvidia.com
+DOMAIN-SUFFIX,nvidia.cn
+DOMAIN-SUFFIX,nvidia.net
+DOMAIN-SUFFIX,asus.com
+DOMAIN-SUFFIX,linksys.com
+DOMAIN-SUFFIX,linksyssmartwifi.com
+DOMAIN-SUFFIX,belkin.com
+DOMAIN-SUFFIX,oray.com
+DOMAIN-SUFFIX,orayimg.com
+
+  # --- 去广告/IP/下载工具 ---
+DOMAIN-SUFFIX,ip.sb
+DOMAIN-SUFFIX,ipinfo.io
+DOMAIN-SUFFIX,ipapi.co
+DOMAIN-SUFFIX,network-test.debian.org
+DOMAIN-SUFFIX,adguard.org
+DOMAIN-SUFFIX,adtidy.org
+DOMAIN-SUFFIX,adrules.top
+DOMAIN-SUFFIX,anti-ad.net
+DOMAIN-SUFFIX,sandai.net
+DOMAIN-SUFFIX,n0808.com
+
+  # --- 游戏 (暴雪/任天堂/Wargaming/Steam) ---
+DOMAIN-SUFFIX,battle.net
+DOMAIN-SUFFIX,battlenet.com.cn
+DOMAIN-SUFFIX,wargaming.net
+DOMAIN-SUFFIX,wotgame.cn
+DOMAIN-SUFFIX,wggames.cn
+DOMAIN-SUFFIX,wowsgame.cn
+DOMAIN-SUFFIX,nintendo.net
+DOMAIN-SUFFIX,steamcontent.com
+
+  # --- PT 站点 & NAS (必须直连) ---
 DOMAIN-SUFFIX,hdchina.org
 DOMAIN-SUFFIX,chdbits.co
 DOMAIN-SUFFIX,hdsky.me
@@ -14,7 +98,6 @@ DOMAIN-SUFFIX,tjupt.org
 DOMAIN-SUFFIX,pthome.net
 DOMAIN-SUFFIX,dicmusic.com
 DOMAIN-SUFFIX,nicept.net
-DOMAIN-SUFFIX,sjtu.edu.cn
 DOMAIN-SUFFIX,soulvoice.club
 DOMAIN-SUFFIX,open.cd
 DOMAIN-SUFFIX,nanyangpt.com
@@ -22,21 +105,59 @@ DOMAIN-SUFFIX,et8.org
 DOMAIN-SUFFIX,gazellegames.net
 DOMAIN-SUFFIX,m-team.cc
 DOMAIN-SUFFIX,m-team.io
+
+  # --- 私有服务 ---
 DOMAIN-SUFFIX,synology.com
+DOMAIN-SUFFIX,synology.me
+DOMAIN-SUFFIX,synology.io
+DOMAIN-SUFFIX,synocommunity.com
+DOMAIN-SUFFIX,immortalwrt.net
 DOMAIN-SUFFIX,chencc.fun
 DOMAIN-SUFFIX,mycoin.xin
 
-# ===== 教育网 / 校园内网 =====
-DOMAIN-SUFFIX,tsinghua.edu.cn
-DOMAIN-SUFFIX,pk.edu.cn
-DOMAIN-SUFFIX,fudan.edu.cn
+  # --- 网络基础服务 (NTP/ConnectTest) ---
+DOMAIN-SUFFIX,pool.ntp.org
+DOMAIN-SUFFIX,msftconnecttest.com
+DOMAIN-SUFFIX,msftncsi.com
+DOMAIN-SUFFIX,3gppnetwork.org
+DOMAIN-SUFFIX,gcloudcs.com
+DOMAIN-SUFFIX,gcloudsdk.com
 
-# ===== NAS / 私有服务 =====
-DOMAIN-SUFFIX,synocommunity.com
-DOMAIN-SUFFIX,synology.me
-DOMAIN-SUFFIX,synology.io
-DOMAIN-SUFFIX,immortalwrt.net 
-DOMAIN-SUFFIX,e7mbqhx.com
-DOMAIN-SUFFIX,fcnode.net
+# ==========================================
+# 3. 正则匹配 (DOMAIN-REGEX)
+# ⚠️ 仅限 Clash Meta (Mihomo) 内核使用
+# ==========================================
+# NTP 时间同步
+DOMAIN-REGEX,^time\.[^.]+\.com
+DOMAIN-REGEX,^time\.[^.]+\.gov
+DOMAIN-REGEX,^time\.[^.]+\.edu\.cn
+DOMAIN-REGEX,^time\.[^.]+\.apple\.com
+DOMAIN-REGEX,^time[1-7]\.[^.]+\.com
+DOMAIN-REGEX,^ntp\.[^.]+\.com
+DOMAIN-REGEX,^ntp[1-7]\.[^.]+\.com
+DOMAIN-REGEX,^[^.]+\.time\.edu\.cn
+DOMAIN-REGEX,^[^.]+\.ntp\.org\.cn
 
+  # STUN / TURN 穿透
+DOMAIN-REGEX,^(.+\.)?stun\.[^.]+\.[^.]+$
+DOMAIN-REGEX,^(.+\.)?stun\.[^.]+\.[^.]+\.[^.]+$
+DOMAIN-REGEX,^(.+\.)?stun\.[^.]+\.[^.]+\.[^.]+\.[^.]+$
+DOMAIN-REGEX,^(.+\.)?stun\.[^.]+\.[^.]+\.[^.]+\.[^.]+\.[^.]+$
+DOMAIN-REGEX,^turn\..+
+DOMAIN-REGEX,^(.+\.)?turn\..+
 
+  # PT Tracker / P2P
+DOMAIN-REGEX,^tracker\.
+DOMAIN-REGEX,^announce\.
+DOMAIN-REGEX,^(.+\.)?tracker\.[^.]+\.[^.]+$
+DOMAIN-REGEX,^(.+\.)?announce\.[^.]+\.[^.]+$
+DOMAIN-REGEX,^dht\.
+DOMAIN-REGEX,^p2p\.
+DOMAIN-REGEX,^bt\.
+  
+  # 其他
+DOMAIN-REGEX,^localhost\.[^.]+\.weixin\.qq\.com
+DOMAIN-REGEX,^[^.]+\.n\.n\.srv\.nintendo\.net
+DOMAIN-REGEX,^xbox\.[^.]+\.[^.]+\.microsoft\.com
+DOMAIN-REGEX,^[^.]+\.[^.]+\.xboxlive\.com
+DOMAIN-REGEX,^xbox\.[^.]+\.microsoft\.com
