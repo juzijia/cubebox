@@ -38,9 +38,6 @@ DOMAIN-SUFFIX,registry.k8s.io
 DOMAIN-SUFFIX,l.gcr.io
 DOMAIN-SUFFIX,compose-spec.io
 DOMAIN-SUFFIX,gravatar.com
-DOMAIN,d1q6f0aelx0por.cloudfront.net
-DOMAIN,d2wy8f7a9ursnm.cloudfront.net
-DOMAIN,d36jcksde1wxzq.cloudfront.net
 
 # ==========================================
 # 👨‍💻 GitHub & 开发工具 (Release/Raw)
