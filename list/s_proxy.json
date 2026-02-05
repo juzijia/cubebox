@@ -1,0 +1,71 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain_suffix": [
+        "themoviedb.org",
+        "tmdb.org",
+        "api.themoviedb.org",
+        "image.tmdb.org",
+        "thetvdb.com",
+        "api.thetvdb.com",
+        "fanart.tv",
+        "assets.fanart.tv",
+        "emby.media",
+        "mb3admin.com",
+        "mediux.pro",
+        "imdb.com",
+        "images-amazon.com",
+        "media-amazon.com",
+        "omdbapi.com",
+        "trakt.tv",
+        "opensubtitles.org",
+        "opensubtitles.com",
+        "plex.tv",
+        "docker.io",
+        "docker.com",
+        "dockerhub.com",
+        "registry-1.docker.io",
+        "auth.docker.io",
+        "production.cloudflare.docker.com",
+        "ghcr.io",
+        "quay.io",
+        "gcr.io",
+        "k8s.gcr.io",
+        "registry.k8s.io",
+        "l.gcr.io",
+        "compose-spec.io",
+        "gravatar.com",
+        "github.com",
+        "github.io",
+        "githubusercontent.com",
+        "githubassets.com",
+        "objects.githubusercontent.com",
+        "huggingface.co",
+        "hf.co",
+        "huggingfaceusercontent.com",
+        "cdn-lfs.huggingface.co",
+        "openai.com",
+        "oaiusercontent.com",
+        "vultr.com",
+        "deb.debian.org",
+        "amazonaws.com",
+        "cloudfront.net",
+        "fastly.net",
+        "openstreetmap.org",
+        "imnks.com",
+        "bobohome.store",
+        "520810.xyz",
+        "gstatic.com",
+        "dnsleaktest.com",
+        "ipleak.net"
+      ],
+      "domain": [
+        "api.ipify.org"
+      ],
+      "domain_keyword": [
+        "browserleaks"
+      ]
+    }
+  ]
+}
