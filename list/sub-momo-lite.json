@@ -5,14 +5,14 @@
 	  { "tag": "local", "address": "udp://210.22.70.225", "strategy": "prefer_ipv4", "detour": "🎯 全球直连" },
 	  { "tag": "public", "address": "https://dns.alidns.com/dns-query", "strategy": "prefer_ipv4", "address_resolver": "local", "detour": "🎯 全球直连" },
 	  { "tag": "foreign", "address": "https://8.8.8.8/dns-query", "detour": "🚀 默认代理" },
-	  {"tag":"fakeip","type":"fakeip","inet4_range":"198.18.0.0/15","inet6_range":"fc00::/18"}
+	  { "tag": "fakeip"," type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
     ],
     "rules": [
       {"clash_mode": "direct", "server": "local"},
       {"clash_mode": "global", "server": "fakeip"},
       {"query_type": "HTTPS", "action": "reject"},
-	  {"rule_set": ["ju-direct","geosite-cn"], "server": "local"},
-      {"rule_set":"geosite-!cn","server":"fakeip"}
+	  {"rule_set": ["ju-direct", "geosite-apple-cn", "geosite-cn"], "server": "local"},
+      {"rule_set": ["geosite-!cn", "geosite-apple"],"server":"fakeip"}
     ],
     "final": "foreign",
     "client_subnet": "223.5.5.0/24",
@@ -59,6 +59,7 @@
       {"rule_set": "geosite-google", "outbound": "🍀 Google"},
       {"rule_set": "geosite-github", "outbound": "👨‍💻 Github"},
       {"rule_set": "geosite-microsoft", "outbound": "Ⓜ️ Microsoft"},
+	  {"rule_set": "geosite-apple-cn", "outbound": "🎯 全球直连"},
       {"rule_set": "geosite-apple", "outbound": "🍏 Apple"},
       {"rule_set": "geosite-telegram", "outbound": "📲 Telegram"},
       {"rule_set": "geosite-steamcn", "outbound": "🎯 全球直连"},
@@ -67,7 +68,7 @@
       {"rule_set": "geosite-cn", "outbound": "🎯 全球直连"},
       {"action": "resolve"},
       {"rule_set": "geoip-google", "outbound": "🍀 Google"},
-      {"rule_set": "geoip-apple", "outbound": "🍏 Apple"},
+      {"rule_set": "geoip-apple", "outbound": "🎯 全球直连"},
       {"rule_set": "geoip-telegram", "outbound": "📲 Telegram"},
       {"rule_set": "geoip-cn", "outbound": "🎯 全球直连"}
     ],
@@ -81,6 +82,7 @@
       {"tag": "geosite-github", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/github.srs", "download_detour": "🚀 默认代理"},
       {"tag": "geosite-microsoft", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/microsoft.srs", "download_detour": "🚀 默认代理"},
       {"tag": "geosite-apple", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/apple.srs", "download_detour": "🚀 默认代理"},
+	  {"tag": "geosite-apple-cn", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/apple-cn.srs", "download_detour": "🚀 默认代理"},
       {"tag": "geosite-telegram", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/telegram.srs", "download_detour": "🚀 默认代理"},
       {"tag": "geosite-steamcn", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/steam@cn.srs", "download_detour": "🚀 默认代理"},
       {"tag": "geosite-steam", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/steam.srs", "download_detour": "🚀 默认代理"},
