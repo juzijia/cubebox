@@ -2,7 +2,6 @@
 # ==========================================
 # 1. 精确域名 (DOMAIN) - IP查询/下载工具
 # ==========================================
-DOMAIN,api.ipify.org
 DOMAIN,ifconfig.me
 DOMAIN,ifconfig.co
 DOMAIN,ident.me
