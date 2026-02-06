@@ -14,7 +14,7 @@
 	  {"domain_suffix":[".mycoin.xin"],"server":"dns-ipv6-direct","query_type":["A","AAAA"],"disable_cache":true},
 	  { "query_type": "AAAA", "action": "reject" },
 	  {"rule_set": "ju-direct", "server": "local"},
-	  {"rule_set": ["geosite-cn", "geosite-apple", "geosite-tiktok", "geosite-iqiyi"], "server": "local"},
+	  {"rule_set": ["geosite-cn", "geosite-apple", "geosite-iqiyi"], "server": "local"},
       {"rule_set":"geosite-geolocation-!cn","server":"fakeip"}
     ],
     "final": "foreign",
