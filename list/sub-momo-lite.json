@@ -5,7 +5,7 @@
 	  { "tag": "local", "address": "udp://210.22.70.225", "strategy": "prefer_ipv4", "detour": "🎯 全球直连" },
 	  { "tag": "public", "address": "https://dns.alidns.com/dns-query", "strategy": "prefer_ipv4", "address_resolver": "local", "detour": "🎯 全球直连" },
 	  { "tag": "foreign", "address": "https://8.8.8.8/dns-query", "detour": "🚀 默认代理" },
-	  { "tag": "fakeip"," type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
+	  { "tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
     ],
     "rules": [
       {"clash_mode": "direct", "server": "local"},
