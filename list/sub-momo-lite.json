@@ -12,9 +12,10 @@
       {"clash_mode": "global", "server": "fakeip"},
       {"query_type": "HTTPS", "action": "reject"},
 	  {"domain_suffix":[".mycoin.xin"],"server":"dns-ipv6-direct","query_type":["A","AAAA"],"disable_cache":true},
+	  { "query_type": "AAAA", "action": "reject" },
 	  {"rule_set": "ju-direct", "server": "local"},
-	  {"rule_set": "geosite-cn", "server": "local"},
-      {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1}
+	  {"rule_set": ["geosite-cn", "geosite-apple", "geosite-tiktok", "geosite-iqiyi"], "server": "local"},
+      {"rule_set":"geosite-geolocation-!cn","server":"fakeip"}
     ],
     "final": "foreign",
     "client_subnet": "223.5.5.0/24",
