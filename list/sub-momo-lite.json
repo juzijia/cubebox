@@ -39,7 +39,7 @@
 	{"tag": "⚡ 高峰专线", "type": "urltest", "outbounds": [], "url": "https://www.gstatic.com/generate_204", "interval": "5m", "tolerance": 50},
 	{"tag": "♻️ 自动选择", "type":"urltest","outbounds": [], "url": "https://www.gstatic.com/generate_204", "interval":"5m", "tolerance":50},
     {"tag": "🍃 延迟辅助", "type":"urltest","outbounds": ["🚀 默认代理", "🎯 全球直连"], "url": "https://www.gstatic.com/generate_204", "interval":"30m", "tolerance":100},
-    {"tag": "🌐 GLOBAL", "type": "selector", "outbounds": ["🚀 默认代理", "🤖 AI", "🔥 YouTube", "🔍 Google", "🧵 Github", "📲 Telegram", "🎮 Steam", "🖥️ Microsoft", "🍏 Apple", "🇭🇰 香港故转", "🇯🇵 日本故转", "🇸🇬 狮城故转", "🇨🇳 台湾故转", "🇺🇲 美国故转", "♻️ 自动选择", "🍃 延迟辅助", "⚡ 高峰专线", "🎯 全球直连"]},
+    {"tag": "🌐 GLOBAL", "type": "selector", "outbounds": ["🚀 默认代理", "🤖 AI", "🔥 YouTube", "🔍 Google", "🧵 Github", "📲 Telegram", "🎮 Steam", "🖥️ Microsoft", "🍏 Apple", "🇭🇰 香港故转", "🇯🇵 日本故转", "🇸🇬 狮城故转", "🇨🇳 台湾故转", "🇺🇲 美国故转", "♻️ 自动选择", "🍃 延迟辅助", "⚡ 高峰专线", "👉 手动选择", "🎯 全球直连"]},
     {"tag": "🎯 全球直连", "type": "direct"}
   ],
   "route": {
