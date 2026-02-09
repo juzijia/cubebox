@@ -30,7 +30,6 @@
     {"tag": "🎮 Steam", "type": "selector", "outbounds": ["🇭🇰 香港故转", "🇯🇵 日本故转", "🇸🇬 狮城故转", "🇨🇳 台湾故转", "🇺🇲 美国故转", "👉 手动选择", "⚡ 高峰专线"]},
     {"tag": "🖥️ Microsoft", "type": "selector", "outbounds": ["🎯 全球直连", "🇯🇵 日本故转", "🇸🇬 狮城故转", "🇨🇳 台湾故转", "🇺🇲 美国故转", "👉 手动选择", "⚡ 高峰专线"]},
     {"tag": "🍏 Apple", "type": "selector", "outbounds": ["🎯 全球直连", "🇭🇰 香港故转", "🇯🇵 日本故转", "🇸🇬 狮城故转", "🇨🇳 台湾故转", "🇺🇲 美国故转", "👉 手动选择", "⚡ 高峰专线"]},
-    {"tag": "🐟 漏网之鱼", "type": "selector", "outbounds": ["🎯 全球直连", "🚀 默认代理"]},
 	{"tag": "🇭🇰 香港故转", "type": "urltest", "outbounds": [], "url": "https://www.gstatic.com/generate_204", "interval": "5m", "tolerance": 200},
 	{"tag": "🇯🇵 日本故转", "type": "urltest", "outbounds": [], "url": "https://www.gstatic.com/generate_204", "interval": "5m", "tolerance": 200},
 	{"tag": "🇸🇬 狮城故转", "type": "urltest", "outbounds": [], "url": "https://www.gstatic.com/generate_204", "interval": "5m", "tolerance": 200},
@@ -94,7 +93,7 @@
       {"tag": "geoip-telegram", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs", "download_detour": "🚀 默认代理"},
       {"tag": "geoip-cn", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs", "download_detour": "🚀 默认代理"}
     ],
-    "final": "🐟 漏网之鱼",
+    "final": "🎯 全球直连",
     "default_domain_resolver": "public"
   },
   "inbounds": [
