@@ -23,8 +23,8 @@
     {"tag": "🚀 默认代理", "type": "selector", "outbounds": ["🇭🇰 香港故转", "🇯🇵 日本故转", "🇸🇬 狮城故转", "🇨🇳 台湾故转", "🇺🇲 美国故转", "👉 手动选择", "♻️ 自动选择", "⚡ 高峰专线"]},
 	{"tag": "🧠 GeMini", "type": "selector", "outbounds": ["🇯🇵 日本故转", "🇸🇬 狮城故转", "🇨🇳 台湾故转", "🇺🇲 美国故转", "👉 手动选择"]},
     {"tag": "🤖 AI", "type": "selector", "outbounds": ["🇭🇰 香港故转", "🇯🇵 日本故转", "🇸🇬 狮城故转", "🇨🇳 台湾故转", "🇺🇲 美国故转", "👉 手动选择", "⚡ 高峰专线"]},
-    {"tag": "🔥 YouTube", "type": "selector", "outbounds": ["🇭🇰 香港故转", "🇯🇵 日本故转", "🇸🇬 狮城故转", "🇨🇳 台湾故转", "🇺🇲 美国故转", "👉 手动选择", "⚡ 高峰专线"]},
-    {"tag": "🔍 Google", "type": "selector", "outbounds": ["🇭🇰 香港故转", "🇯🇵 日本故转", "🇸🇬 狮城故转", "🇨🇳 台湾故转", "🇺🇲 美国故转", "👉 手动选择", "⚡ 高峰专线"]},
+    {"tag": "🔥 YouTube", "type": "selector", "outbounds": ["🇭🇰 香港故转", "🇯🇵 日本故转", "🇸🇬 狮城故转", "🇨🇳 台湾故转", "🇺🇲 美国故转", "👉 手动选择", "⚡ 高峰专线", "♻️ 自动选择"]},
+    {"tag": "🔍 Google", "type": "selector", "outbounds": ["🇭🇰 香港故转", "🇯🇵 日本故转", "🇸🇬 狮城故转", "🇨🇳 台湾故转", "🇺🇲 美国故转", "👉 手动选择", "⚡ 高峰专线", "♻️ 自动选择"]},
     {"tag": "🧵 Github", "type": "selector", "outbounds": ["🇯🇵 日本故转", "🇭🇰 香港故转", "🇸🇬 狮城故转", "🇨🇳 台湾故转", "🇺🇲 美国故转", "👉 手动选择", "⚡ 高峰专线"]},
     {"tag": "📲 Telegram", "type": "selector", "outbounds": ["🇸🇬 狮城故转", "🇭🇰 香港故转", "🇯🇵 日本故转", "🇨🇳 台湾故转", "🇺🇲 美国故转", "👉 手动选择", "⚡ 高峰专线"]},
     {"tag": "🎮 Steam", "type": "selector", "outbounds": ["🇭🇰 香港故转", "🇯🇵 日本故转", "🇸🇬 狮城故转", "🇨🇳 台湾故转", "🇺🇲 美国故转", "👉 手动选择", "⚡ 高峰专线"]},
@@ -38,8 +38,7 @@
     {"tag": "👉 手动选择", "type": "selector", "outbounds": ["🎯 全球直连"]},
 	{"tag": "⚡ 高峰专线", "type": "urltest", "outbounds": [], "url": "https://www.gstatic.com/generate_204", "interval": "5m", "tolerance": 50},
 	{"tag": "♻️ 自动选择", "type":"urltest","outbounds": [], "url": "https://www.gstatic.com/generate_204", "interval":"5m", "tolerance":50},
-    {"tag": "🍃 延迟辅助", "type":"urltest","outbounds": ["🚀 默认代理", "🎯 全球直连"], "url": "https://www.gstatic.com/generate_204", "interval":"30m", "tolerance":100},
-    {"tag": "🌐 GLOBAL", "type": "selector", "outbounds": ["🚀 默认代理", "🤖 AI", "🔥 YouTube", "🔍 Google", "🧵 Github", "📲 Telegram", "🎮 Steam", "🖥️ Microsoft", "🍏 Apple", "🇭🇰 香港故转", "🇯🇵 日本故转", "🇸🇬 狮城故转", "🇨🇳 台湾故转", "🇺🇲 美国故转", "♻️ 自动选择", "🍃 延迟辅助", "⚡ 高峰专线", "👉 手动选择", "🎯 全球直连"]},
+    {"tag": "🌐 GLOBAL", "type": "selector", "outbounds": ["🚀 默认代理", "🤖 AI", "🔥 YouTube", "🔍 Google", "🧵 Github", "📲 Telegram", "🎮 Steam", "🖥️ Microsoft", "🍏 Apple", "🇭🇰 香港故转", "🇯🇵 日本故转", "🇸🇬 狮城故转", "🇨🇳 台湾故转", "🇺🇲 美国故转", "♻️ 自动选择", "⚡ 高峰专线", "👉 手动选择", "🎯 全球直连"]},
     {"tag": "🎯 全球直连", "type": "direct"}
   ],
   "route": {
