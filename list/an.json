@@ -1,0 +1,8 @@
+{
+  "servers": [
+    {
+      "name": "anisette-v3arm",
+      "address": "https://an.chencc.fun:88"
+    }
+  ]
+}
