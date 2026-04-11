@@ -59,7 +59,8 @@
         "gstatic.com",
         "dnsleaktest.com",
         "intercom.io",
-        "ipleak.net"
+        "ipleak.net",
+        "unsplash.com"
       ],
       "domain": [
         "api.ipify.org"
