@@ -60,7 +60,8 @@
         "dnsleaktest.com",
         "intercom.io",
         "ipleak.net",
-        "unsplash.com"
+        "unsplash.com",
+        "fatcatcloud.cc"
       ],
       "domain": [
         "api.ipify.org"
