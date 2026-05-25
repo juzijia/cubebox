@@ -67,7 +67,8 @@
         "api.ipify.org"
       ],
       "domain_keyword": [
-        "browserleaks"
+        "browserleaks",
+        "berrypass"
       ]
     }
   ]
