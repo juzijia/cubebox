@@ -3,7 +3,9 @@
   "rules": [
     {
       "domain_suffix": [
-        "synology.me"
+        "synology.me",
+        "mycoin.xin",
+        "chencc.fun"
       ]
     }
   ]
