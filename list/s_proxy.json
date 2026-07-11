@@ -3,7 +3,8 @@
   "rules": [
     {
       "domain": [
-        "api.ipify.org"
+        "api.ipify.org",
+        "api.myip.com"
       ]
     },
     {
