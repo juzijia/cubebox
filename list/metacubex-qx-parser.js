@@ -60,7 +60,6 @@
   try {
     if (typeof $resource === 'undefined' || typeof $resource.content !== 'string' ||
         typeof $resource.link !== 'string') throw new Error('missing QX resource content/link');
-    if ($resource.type && $resource.type !== 'filter') throw new Error('unsupported QX resource type');
 
     // Only published MetaCubeX meta-branch text resources are accepted.
     var url = $resource.link.split(/[?#]/)[0];
